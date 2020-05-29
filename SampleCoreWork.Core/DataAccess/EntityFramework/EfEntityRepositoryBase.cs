@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
-using Microsoft.EntityFrameworkCore;
 using SampleCoreWork.Core.Entities;
 
 namespace SampleCoreWork.Core.DataAccess.EntityFramework
