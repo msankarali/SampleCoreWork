@@ -5,11 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DataAccess\NHibernate\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="EntityFramework" Version="6.1.3" />
+    <PackageReference Include="NHibernate" Version="5.2.7" />
   </ItemGroup>
 
 </Project>
