@@ -4,4 +4,13 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Concrete\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SampleCoreWork.Core\SampleCoreWork.Core.csproj" />
+    <ProjectReference Include="..\SampleCoreWork.Northwind.Entities\SampleCoreWork.Northwind.Entities.csproj" />
+  </ItemGroup>
+
 </Project>
