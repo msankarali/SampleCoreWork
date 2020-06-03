@@ -8,7 +8,7 @@ using SampleCoreWork.Core.Entities;
 
 namespace SampleCoreWork.Core.DataAccess.EntityFramework
 {
-    class EfEntityRepositoryBase<TEntity, TContext> : IEntityRepository<TEntity>
+    public class EfEntityRepositoryBase<TEntity, TContext> : IEntityRepository<TEntity>
         where TEntity : class, IEntity, new()
         where TContext : DbContext, new()
     {
