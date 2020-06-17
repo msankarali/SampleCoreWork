@@ -17,7 +17,7 @@ namespace SampleCoreWork.Northwind.DataAccess.Concrete.NHibernate.Helpers
                 .Configure()
                 .Database(
                     MsSqlConfiguration.MsSql2012
-                        .ConnectionString(c => c.Database("NorthwindContext")
+                        .ConnectionString(c => c.Is(@"Data Source=(localdb)\MSSQLLocalDB; initial catalog=Northwind;Integrated Security=true")
                         )
                 )
                 .Mappings(t => t.FluentMappings.AddFromAssembly(Assembly.GetExecutingAssembly()))

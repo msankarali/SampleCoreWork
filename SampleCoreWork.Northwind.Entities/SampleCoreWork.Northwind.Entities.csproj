@@ -5,10 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="ComplexTypes\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\SampleCoreWork.Core\SampleCoreWork.Core.csproj" />
   </ItemGroup>
 

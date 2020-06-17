@@ -14,6 +14,7 @@ namespace SampleCoreWork.Northwind.DataAccess.Concrete.EntityFramework
             Database.SetInitializer<NorthwindContext>(null);
         }
         public DbSet<Product> Products { get; set; }
+        public DbSet<Category> Categories { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
