@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using SampleCoreWork.Core.Aspects.Postsharp;
 using SampleCoreWork.Core.CrossCuttingConcerns.Validation.FluentValidation;
+using SampleCoreWork.Core.DataAccess;
 using SampleCoreWork.Northwind.Business.Abstract;
 using SampleCoreWork.Northwind.Business.ValidationRules.FluentValidation;
 using SampleCoreWork.Northwind.DataAccess.Abstract;
@@ -13,6 +15,7 @@ namespace SampleCoreWork.Northwind.Business.Concrete.Managers
     public class ProductManager:IProductService
     {
         private IProductDal _productDal;
+        private readonly IQueryableRepository<Product> _queryable;
 
         public ProductManager(IProductDal productDal)
         {
