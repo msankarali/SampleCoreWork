@@ -10,7 +10,7 @@ using SampleCoreWork.Northwind.Entities.Concrete;
 
 namespace SampleCoreWork.Northwind.Business.Concrete.Managers
 {
-    class ProductManager:IProductService
+    public class ProductManager:IProductService
     {
         private IProductDal _productDal;
 
